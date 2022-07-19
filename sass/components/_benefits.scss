@@ -1,0 +1,98 @@
+.benefits__list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+.benefits__item {
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px)/2);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px)/4);
+    }
+
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &::before {
+        display: block;
+        content: "";
+        height: 120px;
+        background: #F5F4FA no-repeat center;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+
+    &:nth-child(1)::before {
+        background-image: url(../images/antenna.png);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image: url(../images/antenna@2x.png) 50%;
+        }
+    }
+    
+    &:nth-child(2)::before {
+        background-image: url(../images/clock.png);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image: url(../images/clock@2x.png) 50%;
+        }
+    }
+    
+    &:nth-child(3)::before {
+        background-image: url(../images/diagram.png);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image: url(../images/diagram@2x.png) 50%;
+        }
+    }
+    
+    &:nth-child(4)::before {
+        background-image: url(../images/astronaut.png);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image: url(../images/astronaut@2x.png) 50%;
+        }
+    }
+}
+
+.benefits__box {
+    border-radius: 4px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+
+    background-color: #F5F4FA;
+}
+
+.benefits__title {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: getColor("secondary");
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
+}
+
+.benefits__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}

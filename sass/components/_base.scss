@@ -1,0 +1,28 @@
+body {
+    background-color: getColor("background");
+    color: getColor("primary");
+    font-family: getFont("primary"), sans-serif;
+
+    &--is-open {
+        overflow: hidden;
+    }
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}

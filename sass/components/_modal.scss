@@ -1,0 +1,182 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    min-height: 609px;
+
+    border-radius: 4px;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    background-color: getColor("tertiary");
+
+    @media screen and (min-width: 1199px) {
+        width: 528px;
+        height: 581px;
+    }
+}
+
+.modal__close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    color: getColor("secondary");
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: getColor("tertiary");
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: getColor("accent");
+    }
+}
+
+.modal__close-icon {
+    fill: currentColor;
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-left: 41px;
+    padding-right: 39px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.modal__title {
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: getColor("secondary");
+
+    @media screen and (min-width: 1199px) {
+        line-height: 1.15;
+    }
+}
+
+.modal__form-field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+
+    margin-top: 10px;
+
+    &:first-child {
+        margin-top: 0px;
+    }
+}
+
+.modal__form-field--position {
+    margin-bottom: 20px;
+}
+
+.modal__input {
+    min-height: 40px;
+    padding-left: 42px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        outline: none;
+        border-color: getColor("accent");
+    }
+}
+
+.modal__icon {
+    position: absolute;
+    top: 29px;
+    left: 12px;
+
+    fill: getColor("secondary");
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .modal__input:focus + & {
+        fill: getColor("accent");
+    }
+}
+
+.modal__textarea {
+    resize: none;
+    min-height: 120px;
+    padding: 12px 16px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    &::placeholder {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+    
+        color: rgba(117, 117, 117, 0.5);
+    
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:focus {
+        outline: none;
+        border-color: getColor("accent");
+    }
+
+    &:focus::placeholder {
+        color: rgba(33, 150, 243, 0.5);
+    }
+}
+
+.modal__label {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+}
+
+.modal__button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 56px;
+    padding-right: 55px;
+
+    background: getColor("accent");
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: getColor("tertiary");
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: getColor("button-focus");
+    }
+}

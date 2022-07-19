@@ -1,0 +1,21 @@
+$colors: (
+    "primary": #757575,
+    "secondary": #212121,
+    "tertiary": #FFFFFF,
+    "background": #FFFFFF,
+    "accent": #2196F3,
+    "button-focus": #188CE8
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
+
+$fonts: (
+    "primary": Roboto,
+    "logo": Raleway
+);
+
+@function getFont($key) {
+    @return map-get($fonts, $key);
+}
