@@ -38,6 +38,7 @@
 
 .policy__icon {
     margin-right: 7px;
+    flex-shrink: 0;
 
     fill: rgba(0, 0, 0, 0);
     border: 2px solid getColor("secondary");
