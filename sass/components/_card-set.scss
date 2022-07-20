@@ -7,10 +7,11 @@
 }
 
 .card-set__item{
-    @media screen and (max-width: 767px) {
+    display: flex;
+    @media screen and (max-width: 767.98px) {
         margin-bottom: 30px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
         width: calc((100% - 30px)/2);
     }
     @media screen and (min-width: 1200px) {
@@ -54,6 +55,7 @@
     padding-right: 24px;
     padding-left: 24px;
     align-items: center;
+    overflow: auto;
 
     background-color: rgba(33, 150, 243, 0.9);
 

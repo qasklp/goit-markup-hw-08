@@ -11,7 +11,7 @@
 }
 
 .header__menu-backdrop {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
         position: fixed;
         top: 0;
         left: 0;
@@ -82,8 +82,8 @@
 }
 
 .header__phone-menu {
-    @media screen and (max-width: 767px) {
-        padding: 48px 40px;
+    @media screen and (max-width: 767.98px) {
+        padding: 48px 25px;
     }
 
     @media screen and (min-width: 768px) {

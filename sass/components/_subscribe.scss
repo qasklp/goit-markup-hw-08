@@ -1,6 +1,6 @@
 .subscribe__box {
     display: flex;
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1199.98px) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -10,7 +10,7 @@
 .subscribe__input {
     width: 100%;
     margin-bottom: 20px;
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
         min-width: 450px;
     }
     @media screen and (min-width: 1200px) {
